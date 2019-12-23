@@ -6,8 +6,31 @@
     }
 
     &__content {
-        background-color: $color-primary;
         grid-column: col-start 5 / full-end;
+        padding: 6rem 8vw;
+
+        //CENTERED WITH GRID
+        display: grid;
+        align-content: center;
+        justify-items: start;
+        //CENTERED WITH FLEXBOX
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: flex-start;
+    }
+
+    &__text {
+        margin-bottom: 4rem;
+        font-size: 1.5rem;
+        font-style: italic;
 
     }
 }
+
+
+///////////////////////////////////////////
+.u-mb-sm {margin-bottom: 2rem;}
+.u-mb-md {margin-bottom: 3rem;}
+.u-mb-lg {margin-bottom: 4rem;}
+.u-mb-hg {margin-bottom: 5rem;}
