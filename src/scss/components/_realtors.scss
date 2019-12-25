@@ -1,4 +1,35 @@
 .realtors {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+
     background-color: $color-secondary;
     grid-column: col-start 7 / full-end;
+    padding: 3rem;
+
+    &__list {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: min-content max-content;
+        grid-column-gap: 2rem;
+        grid-row-gap: 5vh;
+        align-items: center;
+    }
+
+    &__img {
+        width: 7rem;
+        display: block;
+        border-radius: 50%;
+    }
+
+    &__sold {
+        text-transform: uppercase;
+        color: $color-grey-light-2;
+        margin-top: -3px;
+    }
 }
